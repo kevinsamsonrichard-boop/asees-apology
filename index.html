@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Someone Very Important ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffd1dc,#ff9a9e);
+overflow-x:hidden;
+text-align:center;
+color:#333;
+}
+
+.container{
+max-width:750px;
+margin:auto;
+margin-top:60px;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+h1,h2{
+color:#ff3b6b;
+}
+
+button{
+padding:12px 25px;
+margin:12px;
+border:none;
+border-radius:25px;
+background:#ff3b6b;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.hidden{
+display:none;
+}
+
+.reason{
+text-align:left;
+margin:12px 0;
+padding:12px;
+border-left:4px solid #ff3b6b;
+background:#fff0f3;
+border-radius:6px;
+}
+
+.heart{
+position:fixed;
+color:#ff4d6d;
+animation:float 7s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);opacity:0}
+50%{opacity:1}
+100%{transform:translateY(-10vh);opacity:0}
+}
+
+.magic{
+font-size:28px;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{color:#ff3b6b}
+to{color:#ff8fab}
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Hey Asees ❤️</h1>
+
+<p>I know you probably don't want to talk to me right now.</p>
+<p>But I made this for you.</p>
+
+<button onclick="start()">Open</button>
+
+<div id="part1" class="hidden">
+
+<h2>First, I'm sorry.</h2>
+
+<p>
+Not the quick "sorry" people say just to end an argument.
+A real one.
+</p>
+
+<p>
+Because I understand that what hurt you
+wasn't just one moment.
+It was a series of moments where my actions
+made you feel unheard or unimportant.
+</p>
+
+<p>
+And that is the last thing I ever want you to feel.
+</p>
+
+<button onclick="reasons()">Continue</button>
+
+</div>
+
+<div id="part2" class="hidden">
+
+<h2>The Six Things You Said</h2>
+
+<div class="reason">1️⃣ You felt like I started taking you for granted.</div>
+
+<div class="reason">2️⃣ The reel I liked made you uncomfortable.</div>
+
+<div class="reason">3️⃣ My friend's comment hurt you.</div>
+
+<div class="reason">4️⃣ When you wanted to talk today, I didn't understand how important it was.</div>
+
+<div class="reason">5️⃣ You asked me to remember six things, and I remembered only four, not to forget that I didnt know your LOVE LANGUAGE.</div>
+
+<div class="reason">6️⃣ You feel like I talk more than I listen.</div>
+
+<p>
+Seeing them written here makes me realize
+how these small things added up.
+</p>
+
+<button onclick="reflection()">What I realized</button>
+
+</div>
+
+<div id="part3" class="hidden">
+
+<h2>What I Realized</h2>
+
+<p>
+Sometimes we don't notice our mistakes until someone we care about
+finally says how much it hurt them.
+</p>
+
+<p>
+I realize that remembering things,
+listening carefully,
+and making you feel valued
+are not small details.
+</p>
+
+<p>
+They're the things that actually matter.
+</p>
+
+<p>
+And I want to do better.
+Not just say it.
+Actually do it.
+</p>
+
+<button onclick="promise()">My promise</button>
+
+</div>
+
+<div id="part4" class="hidden">
+
+<h2>My Promise</h2>
+
+<p>
+I promise to listen more carefully.
+</p>
+
+<p>
+I promise to remember the things that matter to you.
+</p>
+
+<p>
+I promise to not make you feel taken for granted.
+</p>
+
+<p>
+And most importantly,
+I promise to try harder every day
+to make sure you feel valued.
+</p>
+
+<button onclick="question()">One question</button>
+
+</div>
+
+<div id="part5" class="hidden">
+
+<h2>Tell me something</h2>
+
+<p>Do you know how important you are to me?</p>
+
+<button onclick="answer()">Yes</button>
+<button id="noBtn" onmouseover="moveButton()">No</button>
+
+</div>
+
+<div id="part6" class="hidden">
+
+<h2>Then let me remind you</h2>
+
+<p>
+You are someone whose smile matters to me.
+</p>
+
+<p>
+Someone whose feelings I never want to hurt again.
+</p>
+
+<p>
+Someone I don't want to lose because of mistakes
+I could have fixed.
+</p>
+
+<p>
+And if you're still upset right now,
+I understand.
+</p>
+
+<p>
+You have every right to feel the way you feel.
+</p>
+
+<p class="magic">✨ But please remember this ✨</p>
+
+<h2>You matter to me.</h2>
+
+<p>
+More than my ego.
+More than arguments.
+More than stupid mistakes.
+</p>
+
+<p>
+And this page will stay here
+as a reminder that I'm trying to be better.
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function start(){
+document.getElementById("part1").classList.remove("hidden")
+}
+
+function reasons(){
+document.getElementById("part2").classList.remove("hidden")
+}
+
+function reflection(){
+document.getElementById("part3").classList.remove("hidden")
+}
+
+function promise(){
+document.getElementById("part4").classList.remove("hidden")
+}
+
+function question(){
+document.getElementById("part5").classList.remove("hidden")
+}
+
+function answer(){
+document.getElementById("part6").classList.remove("hidden")
+}
+
+function moveButton(){
+var btn=document.getElementById("noBtn")
+btn.style.position="absolute"
+btn.style.left=Math.random()*80+"%"
+btn.style.top=Math.random()*80+"%"
+}
+
+setInterval(function(){
+var heart=document.createElement("div")
+heart.className="heart"
+heart.innerHTML="❤️"
+heart.style.left=Math.random()*100+"%"
+heart.style.fontSize=(Math.random()*20+15)+"px"
+document.body.appendChild(heart)
+
+setTimeout(()=>heart.remove(),7000)
+
+},500)
+
+</script>
+
+</body>
+</html>
